@@ -31,8 +31,6 @@ def mandar_comando(comando, socket):
 def leer_comandos(socket):
     #print(socket)
     comando = ''
-    print('Welcome to Shell!')
-    print('Start to write commands!')
     while comando != b'exit':
         comando = input('$> ') # ! Lee un str NO un binario
         respuesta = mandar_comando(comando, socket)
